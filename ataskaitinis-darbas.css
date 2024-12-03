@@ -60,8 +60,9 @@ body header div.wrapper .links {
 }
 body header div.wrapper .links a {
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: small;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-right: 48px;
 }
 body header div.wrapper .links a button {
   background-color: linear-gradient(#647B64, #66AC66);
@@ -69,41 +70,41 @@ body header div.wrapper .links a button {
   border: none;
   cursor: pointer;
 }
-body main .main-wrapper .first {
+body main div.main-wrapper div.first {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
 }
-body main .main-wrapper .first .text {
+body main div.main-wrapper div.first .text {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-body main .main-wrapper .first .text h1 {
+body main div.main-wrapper div.first .text h1 {
   text-transform: uppercase;
 }
-body main .main-wrapper .first .text a button {
+body main div.main-wrapper div.first .text a button {
   padding: 20px;
 }
-body main .main-wrapper .first .image {
+body main div.main-wrapper div.first .image {
   grid-column: 2/3;
   grid-column: 1/2;
   width: 100%;
 }
-body main .main-wrapper .first .image img {
+body main div.main-wrapper div.first .image img {
   height: 343px;
 }
-body main .main-wrapper .second {
+body main div.main-wrapper .second {
   display: flex;
   width: 100%;
 }
-body main .main-wrapper .second .content {
+body main div.main-wrapper .second .content {
   width: 30%;
 }
-body main .main-wrapper .second .links {
+body main div.main-wrapper .second .links {
   width: 70%;
 }
-body main .main-wrapper .second .links .icon .image {
+body main div.main-wrapper .second .links .icon .image {
   display: block;
   justify-content: center;
   background-color: white;
@@ -111,26 +112,26 @@ body main .main-wrapper .second .links .icon .image {
   height: 48px;
   border-radius: 20px;
 }
-body main .main-wrapper .second .links .icon .content {
+body main div.main-wrapper .second .links .icon .content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
 }
-body main .main-wrapper .second .links .icon .content h4 {
+body main div.main-wrapper .second .links .icon .content h4 {
   font-size: 24px;
 }
-body main .main-wrapper .third {
+body main div.main-wrapper .third {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
-body main .main-wrapper .third .content {
+body main div.main-wrapper .third .content {
   display: flex;
   flex-wrap: wrap;
 }
-body main .main-wrapper .third .content .box {
+body main div.main-wrapper .third .content .box {
   display: block;
   border-radius: 8px;
   display: flex;
@@ -138,24 +139,24 @@ body main .main-wrapper .third .content .box {
   justify-content: flex-start;
   padding: 40px 20px;
 }
-body main .main-wrapper .third .content .box .text h3 {
+body main div.main-wrapper .third .content .box .text h3 {
   font-size: 24px;
 }
-body main .main-wrapper .fourth {
+body main div.main-wrapper .fourth {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
 }
-body main .main-wrapper .fourth .image {
+body main div.main-wrapper .fourth .image {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-body main .main-wrapper .fourth .image img {
+body main div.main-wrapper .fourth .image img {
   width: 563px;
   height: 545px;
 }
-body main .main-wrapper .fourth .content {
+body main div.main-wrapper .fourth .content {
   grid-column: 2/3;
   grid-row: 1/2;
   display: flex;
@@ -163,61 +164,61 @@ body main .main-wrapper .fourth .content {
   flex-direction: column;
   justify-content: flex-start;
 }
-body main .main-wrapper .fifth {
+body main div.main-wrapper .fifth {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-body main .main-wrapper .fifth .images .box {
+body main div.main-wrapper .fifth .images .box {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 3fr 1fr;
   padding: 20px;
   margin-right: 20px;
 }
-body main .main-wrapper .fifth .images .box .image {
+body main div.main-wrapper .fifth .images .box .image {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-body main .main-wrapper .fifth .images .box .name {
+body main div.main-wrapper .fifth .images .box .name {
   grid-column: 2/3;
   grid-row: 1/2;
   display: flex;
   align-items: flex-start;
 }
-body main .main-wrapper .fifth .images .box .name h5 {
+body main div.main-wrapper .fifth .images .box .name h5 {
   font-size: 16px;
   font-weight: 500px;
 }
-body main .main-wrapper .fifth .images .box .name h6 {
+body main div.main-wrapper .fifth .images .box .name h6 {
   font-size: 13px;
   font-weight: 400px;
 }
-body main .main-wrapper .fifth .images .box .text {
+body main div.main-wrapper .fifth .images .box .text {
   grid-column: 1/3;
   grid-row: 2/3;
 }
-body main .main-wrapper footer {
+body main div.main-wrapper footer {
   width: 100%;
 }
-body main .main-wrapper footer .footer-wrapper {
+body main div.main-wrapper footer .footer-wrapper {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr 4fr;
   grid-template-rows: 3fr;
 }
-body main .main-wrapper footer .footer-wrapper .list.awesome {
+body main div.main-wrapper footer .footer-wrapper .list.awesome {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-body main .main-wrapper footer .footer-wrapper .list.small1 {
+body main div.main-wrapper footer .footer-wrapper .list.small1 {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-body main .main-wrapper footer .footer-wrapper .list.small2 {
+body main div.main-wrapper footer .footer-wrapper .list.small2 {
   grid-column: 3/4;
   grid-row: 1/2;
 }
-body main .main-wrapper footer .footer-wrapper .list.input {
+body main div.main-wrapper footer .footer-wrapper .list.input {
   grid-column: 4/5;
   grid-row: 1/2;
 }

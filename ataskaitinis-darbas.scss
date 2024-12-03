@@ -57,8 +57,10 @@ body{
                 font-size: 16px;
                 a{
                     text-decoration: none;
-                    text-transform: uppercase;
-                    font-size: small;
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    margin-right: 48px;
+
                     button{
                         background-color: linear-gradient(#647B64, #66AC66);
                         padding: 10px 15px;
@@ -74,8 +76,8 @@ body{
         }
     }
     main{
-        .main-wrapper{
-            .first{
+        div.main-wrapper{
+            div.first{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr;
