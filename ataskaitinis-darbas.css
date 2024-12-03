@@ -36,34 +36,34 @@ body {
   font-optical-sizing: auto;
   background-color: #FEFEFE;
 }
-body header .wrapper {
+body header div.wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body header .wrapper .image {
+body header div.wrapper div.image {
   display: flex;
   align-items: center;
 }
-body header .wrapper .image img {
+body header div.wrapper div.image img {
   width: 50px;
   margin-right: 10px;
 }
-body header .wrapper .image span {
+body header div.wrapper div.image span {
   font-size: 18px;
   font-weight: bold;
 }
-body header .wrapper .links {
+body header div.wrapper .links {
   display: flex;
   align-items: center;
   font-size: 16px;
 }
-body header .wrapper .links a {
+body header div.wrapper .links a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: small;
 }
-body header .wrapper .links a button {
+body header div.wrapper .links a button {
   background-color: linear-gradient(#647B64, #66AC66);
   padding: 10px 15px;
   border: none;
@@ -105,7 +105,8 @@ body main .main-wrapper .second .links {
 }
 body main .main-wrapper .second .links .icon .image {
   display: block;
-  background-color: #647B64;
+  justify-content: center;
+  background-color: white;
   width: 48px;
   height: 48px;
   border-radius: 20px;

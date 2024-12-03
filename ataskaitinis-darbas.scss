@@ -32,11 +32,11 @@ body{
     background-color: #FEFEFE;
     
     header{
-        .wrapper{
+        div.wrapper{
             display: flex;
             align-items: center; 
             justify-content: space-between;
-            .image{
+            div.image{
                 display: flex; 
                 align-items: center;
 
@@ -118,7 +118,8 @@ body{
                     .icon{
                         .image{
                             display: block;
-                            background-color: #647B64;
+                            justify-content: center;
+                            background-color: white;
                             width: 48px;
                             height: 48px;
                             border-radius: 20px;
