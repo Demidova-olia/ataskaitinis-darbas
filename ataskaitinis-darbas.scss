@@ -77,6 +77,9 @@ body{
     }
     main{
         div.main-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
             div.first{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
