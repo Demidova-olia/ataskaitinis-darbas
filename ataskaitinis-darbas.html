@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ataskaitinis darbas</title>
     <link rel="stylesheet" href="ataskaitinis-darbas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -12,13 +15,16 @@
 <header>
     <div class="wpapper">
         <div class="image">
-            <img src="A U.svg" alt="AU"> AWESOME UI
+            <img src="A U.svg" alt="AU"> 
+            <span class="primary">AWESOME UI </span>
         </div>
-        <a href="#"> About Us</a>
-        <a href="#"> Contact Us</a>
-        <a href="#">Store</a>
-        <a href="#">Use Cases</a>
-        <a href="#"><button class="green"></button></a>
+        <div class="links">
+            <a href="#" class="dark"> About Us</a>
+            <a href="#" class="dark"> Contact Us</a>
+            <a href="#" class="dark">Store</a>
+            <a href="#" class="dark">Use Cases</a>
+            <a href="#" class="dark"><button class="light"></button></a>
+        </div>
     </div>
 
 </header>
@@ -26,9 +32,9 @@
     <div class="main-wrapper">
         <div class="first">
             <div class="text">
-                <h1>Lorem ipsum dolor sit amet, consectetur</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue et eros, pellentesque et. Tristique ullamcorper ac pharetra in nisi sit vivamus lorem. </p>
-                <a href="#"><button>Get STARTED <img src="Vector.svg" alt="arrow"></button></a>
+                <h1 class="dark">Lorem ipsum dolor sit amet, consectetur</h1>
+                <p class="light-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue et eros, pellentesque et. Tristique ullamcorper ac pharetra in nisi sit vivamus lorem. </p>
+                <a href="#"><button class="light">Get STARTED <img src="Vector.svg" alt="arrow"></button></a>
             </div>
             <div class="image">
                 <img src="Group 2574.svg" alt="main-image">
@@ -36,10 +42,10 @@
         </div>
         <div class="second">
             <div class="content">
-                <h3>MOT consectet</h3>
-                <h2>amet,consectet</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
-                <a href="#"><button>Get STARTED<img src="Vector.svg" alt="arrow"></button></a>
+                <h3 class="mot">MOT consectet</h3>
+                <h2 class="primary">amet,consectet</h2>
+                <p class="light-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
+                <a href="#"><button class="light">Get STARTED<img src="Vector.svg" alt="arrow"></button></a>
             </div>
             <div class="links">
                 <div class="icon">
@@ -47,7 +53,7 @@
                         <img src="smart-car.svg" alt="car">
 
                     </div>
-                    <div class="content">
+                    <div class="content dark">
                     <h4>Car Rental</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
                     </div>
@@ -57,7 +63,7 @@
                         <img src="ship.svg" alt="boat">
 
                     </div>
-                    <div class="content">
+                    <div class="content dark">
                     <h4>Boat Cruise</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
                     </div>
@@ -67,7 +73,7 @@
                         <img src="bus.svg" alt="bus">
 
                     </div>
-                    <div class="content">
+                    <div class="content dark">
                     <h4>Bus Trip</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
                     </div>
@@ -77,7 +83,7 @@
                         <img src="driving.svg" alt="trip">
 
                     </div>
-                    <div class="content">
+                    <div class="content dark">
                     <h4>Road Trip</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
                     </div>
@@ -85,35 +91,35 @@
             </div>
         </div>
         <div class="third">
-            <h3>MOT consectet</h3>
-            <h2>amet,consectet iquet </h2>
-            <div class="content">
+            <h3 class="mot">MOT consectet</h3>
+            <h2 class="primary">amet,consectet iquet </h2>
+            <div class="content ">
                 <div class="box">
                     <div class="image">
                         <img src="python.svg" alt="python">
                     </div>
-                    <dic class="text">
-                        <h3>MOT consectet</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
-                    </dic>
+                    <div class="text">
+                        <h3 class="dark">MOT consectet</h3>
+                        <p class="light-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+                    </div>
                 </div>
                 <div class="box">
                     <div class="image">
                         <img src="iost-(iost).svg" alt="iost">
                     </div>
-                    <dic class="text">
+                    <div class="text light">
                         <h3>MOT consectet</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
-                    </dic>
+                    </div>
                 </div>
                 <div class="box">
                     <div class="image">
                         <img src="stacks-(stx).svg" alt="stacks">
                     </div>
-                    <dic class="text">
-                        <h3>MOT consectet</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
-                    </dic>
+                    <div class="text">
+                        <h3 class="dark">MOT consectet</h3>
+                        <p class="light-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,27 +129,27 @@
             </div>
         </div>
         <div class="content">
-            <h3>MOT consectet</h3>
-            <h2>amet,consectet</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
-            <a href="#"><button>Get STARTED <img src="Vector.svg" alt="arrow"></button></a>
+            <h3 class="mot">MOT consectet</h3>
+            <h2 class="primary">amet,consectet</h2>
+            <p class="light-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
+            <a href="#"><button class="light">Get STARTED <img src="Vector.svg" alt="arrow"></button></a>
         </div>
 
     </div>
     <div class="fifth">
-        <h3>MOT consectet</h3>
-        <h2>amet,consectet Sit quis </h2>
+        <h3 class="mot">MOT consectet</h3>
+        <h2 class="primary">amet,consectet Sit quis </h2>
         <div class="images">
             <div class="box">
                 <div class="image">
                     <img src="r.svg" alt="pink jucket">
                 </div>
                 <div class="name">
-                    <h5>CTO May & Baker</h5>
-                    <h6>Tayo Oshinuwa</h6>
+                    <h5 class="dark">CTO May & Baker</h5>
+                    <h6 class="light-dark">Tayo Oshinuwa</h6>
                 </div>
                 <div class="text">
-                    <p><i>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</i></p>
+                    <p class="light-dark"><i>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</i></p>
                 </div>
             </div>
             <div class="box">
@@ -151,11 +157,11 @@
                     <img src="leon-ell-f6HbVnGtNnY-unsplash-removebg-preview 1.svg" alt="lady">
                 </div>
                 <div class="name">
-                    <h5>CTO May & Baker</h5>
-                    <h6>Tayo Oshinuwa</h6>
+                    <h5 class="dark">CTO May & Baker</h5>
+                    <h6 class="light-dark">Tayo Oshinuwa</h6>
                 </div>
                 <div class="text">
-                    <p><i>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</i></p>
+                    <p class="light-dark"><i>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</i></p>
                 </div>
             </div>
             <div class="box">
@@ -163,11 +169,11 @@
                     <img src="philip-martin-D6MmPV6SHqg-unsplash-removebg-preview 1.svg" alt="red hat">
                 </div>
                 <div class="name">
-                    <h5>CTO May & Baker</h5>
-                    <h6>Tayo Oshinuwa</h6>
+                    <h5 class="dark">CTO May & Baker</h5>
+                    <h6 class="light-dark">Tayo Oshinuwa</h6>
                 </div>
                 <div class="text">
-                    <p><i>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</i></p>
+                    <p class="light-dark"><i>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</i></p>
                 </div>
             </div>
         </div>
@@ -176,9 +182,9 @@
 </main>
 <footer>
     <div class="footer-wrapper">
-        <section class="list">
+        <section class="list dark ">
             <ul>
-                <li><img src="A U.svg" alt="AU"> AWESOME UI</li>
+                <li class="primary"><img src="A U.svg" alt="AU"> AWESOME UI</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet</li>
                 <li>Copyright © 2021 AWESOME.</li>
                 <li>All rights reserved</li>
@@ -190,9 +196,9 @@
                 </li>
             </ul>
         </section>
-        <section class="list">
+        <section class="list dark">
             <ul>
-                <li class="green">Company</li>
+                <li class="primary">Company</li>
                 <li>Lorem Ipsum 1</li>
                 <li>Lorem  2</li>
                 <li>Lorem  3</li>
@@ -200,9 +206,9 @@
                 <li>Lorem  5</li>
             </ul>
         </section>
-        <section class="list">
+        <section class="list dark">
             <ul>
-                <li class="green">Support</li>
+                <li class="primary">Support</li>
                 <li>Lorem Ipsum 6</li>
                 <li>Lorem Ipsum 7</li>
                 <li>Lorem Ipsum 8</li>
@@ -210,8 +216,8 @@
                 <li>Lorem Ipsum 10</li>
             </ul>
         </section>
-        <section class="list">
-            <h3>SEND MESSAGE</h3>
+        <section class="list dark">
+            <h3 class="primary">SEND MESSAGE</h3>
 
             <form action="/action_page.php">
             <input type="text" id="email" name="email" value="Your email address" ><br><br>

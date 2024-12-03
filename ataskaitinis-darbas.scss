@@ -1,0 +1,65 @@
+
+.primary{
+    color: #647B64;
+}
+.dark{
+    color: #333333;
+}
+.mot{
+    color: #F3B562;
+}
+.light{
+    color: #FEFEFE;
+}
+.light-dark{
+    color: #4F4F4F;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #FEFEFE;
+    
+    header{
+        .wrapper{
+            display: flex;
+            align-items: center; 
+            justify-content: space-between;
+            .image{
+                display: flex; 
+                align-items: center;
+
+                img{
+                    width: 50px;
+                    
+                    margin-right: 10px; 
+                }
+                span{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                
+            }
+            .links{
+                display: flex; 
+                align-items: center;
+                font-size: 16px;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: small;
+                    button{
+                        background-color: linear-linear-gradient(#647B64, #66AC66);
+                        padding: 10px 15px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    
+
+                }
+                
+            }
+
+        }
+    }
+}
