@@ -28,15 +28,26 @@
 
 .bc-white {
   background-color: white;
-  background-color: linear-gradient rgba(100, 123, 100, 0.768627451), rgba(100, 123, 100, 0);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  width: 1440px;
+  height: 100%;
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
-  background-color: #FEFEFE;
+  background-color: #F1F0EC;
+}
+body header {
+  width: 100%;
 }
 body header div.wrapper {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,16 +88,23 @@ body main div.main-wrapper {
 }
 body main div.main-wrapper div.first {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 3fr;
   justify-content: center;
+  align-items: center;
 }
 body main div.main-wrapper div.first .text {
   grid-column: 1/2;
   grid-row: 1/2;
+  margin-right: 222px;
+  margin-top: 108px;
+  margin-left: 140px;
+  width: 460px;
 }
 body main div.main-wrapper div.first .text h1 {
   text-transform: uppercase;
+  text-align: start;
+  text-wrap: balance;
 }
 body main div.main-wrapper div.first .text a button {
   padding: 20px;
@@ -95,27 +113,53 @@ body main div.main-wrapper div.first .image {
   grid-column: 2/3;
   grid-row: 1/2;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 61px;
 }
 body main div.main-wrapper div.first .image img {
-  height: 343px;
+  width: 585px;
+  height: 319;
 }
 body main div.main-wrapper .second {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 3fr;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  margin: 140px;
 }
 body main div.main-wrapper .second .content {
-  width: 30%;
+  width: 400px;
+}
+body main div.main-wrapper .second .content p {
+  font-size: 16px;
 }
 body main div.main-wrapper .second .links {
-  width: 70%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 100px;
+}
+body main div.main-wrapper .second .links .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
 }
 body main div.main-wrapper .second .links .icon .image {
   display: block;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  background-color: white;
   width: 48px;
   height: 48px;
-  border-radius: 20px;
+  border-radius: 8px;
 }
 body main div.main-wrapper .second .links .icon .content {
   display: flex;
@@ -126,23 +170,32 @@ body main div.main-wrapper .second .links .icon .content {
 body main div.main-wrapper .second .links .icon .content h4 {
   font-size: 24px;
 }
+body main div.main-wrapper .second .links .icon .content p {
+  width: 200px;
+  font-size: 13px;
+}
 body main div.main-wrapper .third {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 body main div.main-wrapper .third .content {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 170px;
 }
 body main div.main-wrapper .third .content .box {
   display: block;
+  width: 360px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 40px 20px;
+  margin-right: 40px;
 }
 body main div.main-wrapper .third .content .box .text h3 {
   font-size: 24px;
@@ -152,6 +205,10 @@ body main div.main-wrapper .fourth {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
+  align-items: center;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 150px;
 }
 body main div.main-wrapper .fourth .image {
   grid-column: 1/2;
@@ -169,10 +226,22 @@ body main div.main-wrapper .fourth .content {
   flex-direction: column;
   justify-content: flex-start;
 }
+body main div.main-wrapper .fourth .content p {
+  max-width: 400px;
+  padding-bottom: 40px;
+}
 body main div.main-wrapper .fifth {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 170px;
+}
+body main div.main-wrapper .fifth .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body main div.main-wrapper .fifth .images .box {
   display: grid;
@@ -180,6 +249,8 @@ body main div.main-wrapper .fifth .images .box {
   grid-template-rows: 3fr 1fr;
   padding: 20px;
   margin-right: 20px;
+  width: 360px;
+  height: 419px;
 }
 body main div.main-wrapper .fifth .images .box .image {
   grid-column: 1/2;
@@ -189,43 +260,79 @@ body main div.main-wrapper .fifth .images .box .name {
   grid-column: 2/3;
   grid-row: 1/2;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
 }
 body main div.main-wrapper .fifth .images .box .name h5 {
   font-size: 16px;
   font-weight: 500px;
+  margin: 0;
+  padding-bottom: 5px;
 }
 body main div.main-wrapper .fifth .images .box .name h6 {
   font-size: 13px;
   font-weight: 400px;
+  margin: 0;
 }
 body main div.main-wrapper .fifth .images .box .text {
   grid-column: 1/3;
   grid-row: 2/3;
+  width: 250px;
 }
 body main footer {
   width: 100%;
+  background-color: #F0DCC5;
 }
 body main footer .footer-wrapper {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr 4fr;
   grid-template-rows: 3fr;
 }
-body main footer .footer-wrapper .list.awesome {
+body main footer .footer-wrapper section.list.awesome {
   grid-column: 1/2;
   grid-row: 1/2;
+}
+body main footer .footer-wrapper section.list.awesome li.primary {
+  font-size: 14px;
+}
+body main footer .footer-wrapper section.list.awesome li.primary img {
+  height: 48px;
+  width: 35px;
+}
+body main footer .footer-wrapper section.list.awesome li {
+  font-size: 14px;
+}
+body main footer .footer-wrapper section.list.awesome li.links {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 16px;
 }
 body main footer .footer-wrapper .list.small1 {
   grid-column: 2/3;
   grid-row: 1/2;
 }
+body main footer .footer-wrapper .list.small1 li.primary {
+  font-size: 20px;
+}
 body main footer .footer-wrapper .list.small2 {
   grid-column: 3/4;
   grid-row: 1/2;
 }
+body main footer .footer-wrapper .list.small2 li.primary {
+  font-size: 20px;
+}
 body main footer .footer-wrapper .list.input {
   grid-column: 4/5;
   grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+}
+body main footer .footer-wrapper .list.input h3.primary {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+body main footer .footer-wrapper .list.input h3.primary form {
+  height: 280px;
+  width: 110px;
 }
 
 .mot {
@@ -236,4 +343,15 @@ body main footer .footer-wrapper .list.input {
 h2.primary {
   font-size: 41px;
   text-transform: uppercase;
+}
+
+a button.light.bc-primary {
+  text-transform: uppercase;
+  width: 350px;
+  height: 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }/*# sourceMappingURL=ataskaitinis-darbas.css.map */
