@@ -25,18 +25,17 @@
     background-color: white;
     
 }
-html, body {
-    height: 100%; 
-    margin: 0;     
-    padding: 0;    
+html{
+    width: 1440px;
 }
 
 body{
     width: 1440px;   
-    height: 100%; 
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     background-color: #F1F0EC;
+    margin: 0;     
+    padding: 0;  
     header{
         width: 100%;
         div.wrapper{
@@ -84,14 +83,17 @@ body{
         }
     }
     main{
+        width: 100%;
         div.main-wrapper{
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            width: 100%;
             div.first{
                 display: grid;
                 grid-template-columns: 3fr 2fr;
                 grid-template-rows: 3fr;
+                width: 100%;
                 justify-content: center;
                 align-items: center;
 
@@ -213,7 +215,7 @@ body{
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
-                        padding: 40px 20px;
+                        padding: 70px 50px;
                         margin-right: 40px;
 
                         .image{
@@ -223,7 +225,7 @@ body{
                             h3{
                                 font-size: 24px;
                             }
-                            p{}
+                            p{ width: 250px;}
 
                         }
 
@@ -326,30 +328,42 @@ body{
 
             }
         }
+    }
             footer{
                 width: 100%;
                 background-color: #F0DCC5;
                 .footer-wrapper{
+                    width: 100%;
+                    padding: 100px 140px 100px 140px;
                     display: grid;
                     grid-template-columns: 3fr 2fr 2fr 4fr;
-                    grid-template-rows: 3fr;
+                    grid-template-rows: auto;
+                    
+                    
                     
                         section.list.awesome{
                             
                             grid-column: 1/2;
                             grid-row: 1/2;
+                            
                             li.primary{
+                                display: flex;
+                                align-items: center;
                                 img{height: 48px;
                                 width: 35px;}
                                 font-size: 14px;
                             }
                             li{
                                 font-size: 14px;
+                                margin-bottom: 16px;
+                                width: 240px;
                             }
                             li.links{
                                 display: flex;
                                 align-items: flex-start;
-                                margin-right: 16px;
+                                a{
+                                    margin-right: 16px;
+                                }
                             }
 
                         }
@@ -360,20 +374,30 @@ body{
                             grid-row: 1/2;
                             li.primary{
                                 font-size: 20px;
+                                margin-bottom: 24px;
+                            }
+                            li{
+                                margin-bottom: 12px;
                             }
                         }
                     
                     
                         .list.small2{
+                            
                             grid-column: 3/4;
                             grid-row: 1/2;
                             li.primary{
                                 font-size: 20px;
+                                margin-bottom: 24px;
+                            }
+                            li{
+                                margin-bottom: 12px;
                             }
                         }
                     
 
                     .list.input{
+                        margin-left: 100px;
                         grid-column: 4/5;
                         grid-row: 1/2;
                         display: flex;
@@ -381,17 +405,73 @@ body{
                         h3.primary{
                             font-size: 20px;
                             text-transform: uppercase;
-                            form{
-                                height: 280px;
-                                width: 110px;
-
+                            form {
+                                display: flex;
+                                flex-direction: column;
+                      
+                                input[type="button"] {
+                                  text-transform: uppercase;
+                                  width: 280px;
+                                  height: 56px;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  padding-left: 30px;
+                                  padding-right: 30px;
+                                  background-color: #647B64;
+                                  color: white;
+                                  border: none;
+                                  cursor: pointer;
+                                }
+                      
+                                input[type="text"] {
+                                  width: 280px;
+                                  height: 110px;
+                                  margin-bottom: 10px;
+                                  padding: 10px;
+                                  font-size: 16px;
+                                  border: 1px solid #ccc;
+                                  border-radius: 5px;
+                                }
                             }
+                        }
+                        form{
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 280px;
+                        height: 110px;
+                        textarea {
+                            width: 280px;       
+                            min-height: 110px;      
+                            padding-left: 24px;
+                            padding-top: 12px;
+                        
+                            font-size: 16px;    
+                            
+                        }
+                        input[type="submit"] {
+                            width: 280px; 
+                            height: 56px;      
+                            padding: 15px;     
+                            background-color: #647B64;  
+                            color: white;   
+                            border: none;     
+                            display: flex;
+                        
+                            align-items: flex-start;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            cursor: pointer;   // Pointer cursor on hover
+                            font-size: 13px;    // Font size for the button text
+                            transition: background-color 0.3s;
+                        }
+            
                         }
                     }
                 }
             }
         
-    }
+    
 }
 .mot{font-size: 24px;
     text-transform: uppercase;}

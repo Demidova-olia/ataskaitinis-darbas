@@ -217,10 +217,10 @@
                 </section>
                 <section class="list input">
                     <h3 class="primary">SEND MESSAGE</h3>
-
-                    <form action="/action_page.php">
-                    <input type="text" id="email" name="email" value="Your email address" ><br><br>
-                    <input class="light bc-primary" type="button" value="SEND Message " />
+                    <form action="/submit_message.php" method="POST">
+                        
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your email address"></textarea><br><br>
+                        <input type="submit" value="SEND MESSAGE" img= "src="Vector.svg">
                     </form>
                 </section>
             </div>
