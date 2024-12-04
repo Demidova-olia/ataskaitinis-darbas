@@ -28,12 +28,13 @@
     
 }
 html{
-    width: 100%;
-}
+    max-width: 1440px;
+
 
 body{
     @include responsive.sm {
         margin: 0 auto; 
+        padding: 10px;
     }
 
     width: 100%;   
@@ -70,7 +71,8 @@ body{
             .links{
                 width: 70%;
                 display: flex; 
-                align-items: center;
+                
+                justify-content: flex-end;
                 font-size: 16px;
                 a{
                     text-decoration: none;
@@ -79,6 +81,7 @@ body{
                     margin-right: 48px;
 
                     button{
+                        display: block;
                         background-color: #647B64;
                         padding: 10px 15px;
                         border: none;
@@ -103,7 +106,7 @@ body{
                 display: grid;
                 grid-template-columns: 3fr 2fr;
                 grid-template-rows: 3fr;
-                width: 100%;
+                width: 1440px;
                 justify-content: center;
                 align-items: center;
 
@@ -112,7 +115,7 @@ body{
                     grid-row: 1/2;
                     margin-right: 222px;
                     margin-top: 108px;
-                    margin-left: 140px;
+                    margin-left: 60px;
                     width: 460px;
 
                     h1{
@@ -482,6 +485,7 @@ body{
             }
         
     
+}
 }
 .mot{font-size: 24px;
     text-transform: uppercase;}
