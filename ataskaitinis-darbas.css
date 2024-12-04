@@ -41,40 +41,6 @@ html body {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 400px) {
-  html body {
-    margin: 0 auto;
-    padding: 10px;
-  }
-  html body header {
-    width: 100%;
-    margin: 5px;
-  }
-  html body header div.wrapper {
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-  }
-  html body header div.wrapper div.image {
-    width: 400px;
-    height: 50%;
-  }
-  html body header div.wrapper div.image .primary {
-    font-size: 12px;
-  }
-  html body header div.wrapper .links {
-    width: 100%;
-    height: 50%;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-  }
-  html body header div.wrapper .links a {
-    margin-right: 5px;
-    font-size: 12px;
-  }
-}
 html body header {
   width: 100%;
 }
@@ -116,6 +82,57 @@ html body header div.wrapper .links a button {
   border: none;
   cursor: pointer;
 }
+@media (max-width: 400px) {
+  html body {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  html body main div.main-wrapper {
+    padding: 10px;
+  }
+  html body main div.main-wrapper div.first {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 400px;
+  }
+  html body main div.main-wrapper div.first .text {
+    margin: 0;
+    width: 50%;
+  }
+  html body main div.main-wrapper div.first .text a button {
+    width: 175px;
+    height: 36px;
+  }
+  html body main div.main-wrapper div.first .image {
+    width: 50%;
+    position: relative;
+    right: 40px;
+  }
+  html body main div.main-wrapper div.first .image img {
+    height: 165px;
+    width: 300px;
+  }
+  html body main div.main-wrapper .second {
+    grid-template-columns: 1fr;
+    grid-template-areas: 1fr 1fr;
+    margin: 20px;
+  }
+  html body main div.main-wrapper .second .content {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 250px;
+  }
+  html body main div.main-wrapper .second .links {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+  }
+  html body main div.main-wrapper .second .links .icon {
+    width: 155px;
+  }
+}
 html body main {
   width: 100%;
 }
@@ -136,7 +153,7 @@ html body main div.main-wrapper div.first {
 html body main div.main-wrapper div.first .text {
   grid-column: 1/2;
   grid-row: 1/2;
-  margin-right: 222px;
+  margin-right: 100px;
   margin-top: 108px;
   margin-left: 60px;
   width: 460px;
@@ -156,10 +173,14 @@ html body main div.main-wrapper div.first .image {
   display: flex;
   justify-content: center;
   margin-top: 61px;
+  overflow: hidden;
+  position: static;
 }
 html body main div.main-wrapper div.first .image img {
-  width: 585px;
-  height: 319;
+  width: 319px;
+  height: 585px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 html body main div.main-wrapper .second {
   display: grid;

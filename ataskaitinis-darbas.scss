@@ -32,10 +32,7 @@ html{
 
 
 body{
-    @include responsive.sm {
-        margin: 0 auto; 
-        padding: 10px;
-    }
+    
 
     width: 100%;   
     font-family: "DM Sans", sans-serif;
@@ -95,6 +92,10 @@ body{
 
         }
     }
+    @include responsive.sm {
+        margin: 0 auto; 
+        padding: 10px;
+    }
     main{
         width: 100%;
         div.main-wrapper{
@@ -113,7 +114,7 @@ body{
                 .text{
                     grid-column: 1/2;
                     grid-row: 1/2;
-                    margin-right: 222px;
+                    margin-right: 100px;
                     margin-top: 108px;
                     margin-left: 60px;
                     width: 460px;
@@ -137,10 +138,15 @@ body{
                     display: flex;
                     justify-content: center;
                     margin-top: 61px;
+                    overflow: hidden;
+                    position: static;
                     
                     img{
-                        width: 585px;
-                        height: 319;}
+                        width: 319px;
+                        height: 585px;
+                        object-fit: cover;
+                        
+                }
                 }
             }
             .second{
@@ -152,6 +158,8 @@ body{
                 width: 100%;
                 margin: 140px;
                 .content{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
                     width: 400px;
                     p{
                         font-size: 16px;
