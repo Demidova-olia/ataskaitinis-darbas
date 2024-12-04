@@ -1,5 +1,5 @@
 @mixin sm{
-    @media(min-width: 700px){
+    @media(min-width: 400px){
         @content;
         header{
             div.wrapper{
@@ -11,6 +11,16 @@
             div.main-wrapper{
                 div.first{
                     grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    .text{
+                        grid-column: 1/2;
+                        grid-row: 1/2;
+                    }
+                    .image{
+                        grid-column: 1/2;
+                        grid-row: 2/3;
+
+                    }
                 }
             }
         }
