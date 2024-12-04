@@ -1,31 +1,45 @@
 @mixin sm{
-    @media(min-width: 400px){
+    @media(max-width: 400px){
         @content;
-        header{
-            div.wrapper{
+        header {
+            width: 100%;
+            margin: 5px;
+      
+            div.wrapper {
+              flex-direction: column;
+              justify-content: center;
+              height: 100%;
+              width: 100%;
+      
+              div.image {
+                width: 400px;
+                height: 50%;
+                
+                .primary {
+                  font-size: 12px;
+                }
+              }
+      
+              .links {
+                width: 100%;
+                height: 50%;
+                
+                font-size: 12px;
                 display: flex;
                 flex-direction: column;
-            }
-        }
-        main{
-            div.main-wrapper{
-                div.first{
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr 1fr;
-                    .text{
-                        grid-column: 1/2;
-                        grid-row: 1/2;
-                    }
-                    .image{
-                        grid-column: 1/2;
-                        grid-row: 2/3;
-
-                    }
+                
+      
+                a {
+                    
+                  margin-right: 5px;
+                  font-size: 12px;
                 }
+              }
             }
+          }
         }
     }
-}
+
 @mixin md{
     @media(min-width: 800px){
         @content;
