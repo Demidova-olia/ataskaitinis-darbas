@@ -192,6 +192,8 @@ html body main div.main-wrapper .second {
   margin: 140px;
 }
 html body main div.main-wrapper .second .content {
+  grid-column: 1/2;
+  grid-row: 1/2;
   width: 400px;
 }
 html body main div.main-wrapper .second .content p {
