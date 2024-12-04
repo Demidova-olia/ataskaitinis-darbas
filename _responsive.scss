@@ -1,0 +1,38 @@
+@mixin sm{
+    @media(min-width: 700px){
+        @content;
+        header{
+            div.wrapper{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        main{
+            div.main-wrapper{
+                div.first{
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+@mixin md{
+    @media(min-width: 800px){
+        @content;
+    }
+}
+@mixin lg{
+    @media(min-width: 900px){
+        @content;
+    }
+}
+@mixin xlg{
+    @media(min-width: 1000px){
+        @content;
+    }
+}
+@mixin xxlg{
+    @media(min-width: 1200px){
+        @content;
+    }
+}
